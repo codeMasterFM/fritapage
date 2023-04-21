@@ -56,7 +56,38 @@ nav {
   font-size: 50px;
   text-shadow: 1px 5px 5px #2e2d32;
   text-align: center;
+  width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .Product {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #f1f1f1;
+    word-wrap:break-word;
+    margin: 0%;
+    padding: 0px;
+  }
+  .Product >span {
+    word-wrap:break-word;
+    color:rebeccapurple;
+
+  }
+  body{
+    width: 100%;
+    
+  }
+  nav{
+    width: 100%;
+  }
+  .NavOpcion{
+    display: none;
+  }
+  iframe{
+    margin-top: -110px;
+  }
+}
+
 .hidden::before{
     content: "c";
     background-image: url("./asset/fondo.jpg");
