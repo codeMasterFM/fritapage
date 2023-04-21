@@ -3,6 +3,7 @@ body {
   margin: 0px;
   background-image: url("./asset/fondo2.jpg");
   overflow-x  : hidden;
+  max-width: 1920px;
 }
 nav {
   background-color: rgb(75, 109, 109);
@@ -37,10 +38,7 @@ nav {
  font-family: 'Castoro Titling', cursive;
  font-size: 30px;
 }
-.home{
-  height: 500px; 
-  color: aliceblue;
-}
+
 .show{
   opacity: 1;
   transform: rotateX('300');
@@ -49,50 +47,24 @@ nav {
 }
 
 .Product {
+  height: 500px; 
+  color: aliceblue;
   display: flex;
   align-items: center;
   padding-left: 20vh;
-  padding-right: 20vh;
+  padding-right: 10vh;
   color: rgb(255, 255, 255);
   font-size: 50px;
   text-shadow: 1px 5px 5px #2e2d32;
   text-align: center;
   width: 100%;
+  justify-content: space-around;
 }
-@media screen and (max-width: 768px) {
-  .Product {
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    background-color: #f1f1f1;
-    word-wrap:break-word;
-    margin: 0%;
-    padding: 0px;
-  }
-  .Product >span {
-    word-wrap:break-word;
-    color:rebeccapurple;
 
-  }
-  
-  body{
-    width: 100%;
-    
-  }
-  nav{
-    width: 100%;
-  }
-  .NavOpcion{
-    display: none;
-  }
-  iframe{
-    margin-top: -110px;
-  }
-}
 
 .hidden::before{
-    content: "c";
-    background-image: url("./asset/fondo.jpg");
+  content: "c";
+  background-image: url("./asset/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -108,11 +80,14 @@ nav {
 .Product > span{
     text-shadow: 10px 1px 5px black;
     -shadow: 18px 8px 25px rgba(128, 0, 0, 1),-6px -12px 20px rgba(43, 91, 101, 1),19px -10px 23px rgba(92, 81, 65, 1),-11px 2px 7px rgba(67, 87, 6, 1),-9px -19px 24px rgba(8, 60, 27, 1),12px -13px 13px rgba(42, 77, 104, 1);
-    z-index: 10;
+    z-index: 1;
+    padding: 10px;
+    gap: 3px;
 }
 .Product > span >h1{
+  position: relative;
   font-size: 40px;
-    animation: typing 4s steps(60, end);
+    animation: typing 4s steps(60, end) forwards;
     white-space: nowrap;
     overflow: hidden;
     font-size: 24px;
@@ -120,6 +95,7 @@ nav {
     padding-right: 10px;
     color: antiquewhite;
     border: 1px solid white;
+    z-index: 20;
   }
   
   /* Define la animación de la máquina de escribir */
@@ -172,7 +148,51 @@ iframe {
 }   
 .Productocel{
   padding: 0%;
-  width: auto;
   display: block;
+  margin-left: -10%;
 
+}
+
+@media screen and (max-width: 768px) {
+  .Product {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    word-wrap:break-word;
+    margin: 0%;
+    padding: 0px;
+  }
+  .Product >span {
+    word-wrap:break-word;
+
+  }
+  
+  body{
+    width: 100%;
+    
+  }
+  nav{
+    width: 100;
+  }
+  .NavOpcion{
+    display: none;
+  }
+  iframe{
+    margin-top: -110px;
+  }
+  .hidden::before{
+    content: "c";
+    background-image: url("./asset/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80%; 
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    width: 100%;
+    filter: blur(3px);
+    filter: contrast(5px);
+    z-index: 0;
+  }
 }
