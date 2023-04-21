@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-image: url("./asset/fondo2.jpg");
+  overflow-x  : hidden;
 }
 nav {
   background-color: rgb(75, 109, 109);
@@ -73,6 +74,7 @@ nav {
     color:rebeccapurple;
 
   }
+  
   body{
     width: 100%;
     
@@ -127,6 +129,7 @@ nav {
     }
     to {
       width: 100%;
+      white-space: normal;
     }
   }
 
@@ -167,3 +170,9 @@ iframe {
     font-size: large;
     
 }   
+.Productocel{
+  padding: 0%;
+  width: auto;
+  display: block;
+
+}
