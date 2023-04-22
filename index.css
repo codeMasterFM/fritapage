@@ -25,9 +25,12 @@ nav {
   align-items: center;
   margin-right: 5%;
   gap: 10px;
+  z-index: 20;
 }
-.NavOpcion > span {
+.NavOpcion > span a {
   border-bottom: dashed 1px rgb(255, 255, 255);
+  text-decoration: none;
+  color: azure;
 }
 .hidden { 
   height: 500px; 
@@ -179,6 +182,8 @@ iframe {
   }
   iframe{
     margin-top: -110px;
+    height: 600px;
+    margin-left: 5%;
   }
   .hidden::before{
     content: "c";
