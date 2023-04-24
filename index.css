@@ -7,6 +7,10 @@ body {
 }
 nav {
   background:linear-gradient(190deg, black,#5e5898);
+  animation-name: color;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -16,6 +20,18 @@ nav {
   font-size: 20px;
   width: 100%;
 }
+
+@keyframes color {
+  0%{
+    margin-top: -200px;
+    background:linear-gradient(190deg, rgb(255, 252, 252),#5e5898);
+  }
+  100%{
+    background:linear-gradient(190deg, black,#5e5898);
+  }
+}
+
+
 .NavLogo {
   display: flex;
   align-items: center;
@@ -41,6 +57,7 @@ nav {
  font-family: 'Castoro Titling', cursive;
  font-size: 30px;
  display: flex;
+ margin-top: 100px;
 }
 
 .show{
