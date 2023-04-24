@@ -12,3 +12,14 @@ const observer = new IntersectionObserver((entries)=>{
 
 const hiddentElement = document.querySelectorAll(".hidden");
 hiddentElement.forEach((el) => observer.observe(el));
+
+const info = document.querySelector("#info");
+console.log(info)
+console.log("hola")
+const scrollInfo =() => {
+window.scroll({
+    top: 600,
+    behavior: 'smooth'
+  });
+}
+info.addEventListener('click',scrollInfo);

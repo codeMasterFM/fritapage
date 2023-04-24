@@ -6,7 +6,7 @@ body {
   max-width: 1920px;
 }
 nav {
-  background-color: rgb(75, 109, 109);
+  background:linear-gradient(190deg, black,#5e5898);
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -40,6 +40,7 @@ nav {
  transform: rotateX('300');
  font-family: 'Castoro Titling', cursive;
  font-size: 30px;
+ display: flex;
 }
 
 .show{
@@ -54,8 +55,7 @@ nav {
   color: aliceblue;
   display: flex;
   align-items: center;
-  padding-left: 20vh;
-  padding-right: 10vh;
+ 
   color: rgb(255, 255, 255);
   font-size: 50px;
   text-shadow: 1px 5px 5px #2e2d32;
@@ -90,14 +90,14 @@ nav {
 .Product > span >h1{
   position: relative;
   font-size: 40px;
-    animation: typing 4s steps(60, end) forwards;
+    animation: typing 4s steps(40, end) forwards;
     white-space: nowrap;
     overflow: hidden;
     font-size: 24px;
     border-right: 3px solid rgb(25, 237, 240);
     padding-right: 10px;
     color: antiquewhite;
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     z-index: 20;
   }
   
@@ -106,7 +106,10 @@ nav {
     from {
       width: 0;
     }
-    to {
+    99%{
+      white-space: nowrap;
+    }
+    100% {
       width: 100%;
       white-space: normal;
     }
@@ -142,13 +145,16 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 80%;
     height: auto;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    
+    font-size: large;  
 }   
+.Info > img{
+ border-radius: 5%;
+ border: 2px solid white;
+}
 .Productocel{
   padding: 0%;
   display: block;
