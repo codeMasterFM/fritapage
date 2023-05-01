@@ -50,10 +50,13 @@ nav {
   text-decoration: none;
   color: azure;
 }
-.hidden > span  { 
-
- font-family: 'Castoro Titling', cursive;
+.hidden > span >h2 { 
+margin-top: 100px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
+
+
+
 
 .hidden > p  { 
 
@@ -98,7 +101,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 70vh; 
+  height: 67vh; 
   position: absolute;
   left: 0%;
   top: 15%;
@@ -213,6 +216,12 @@ iframe {
 #qr{
   border-radius: 20px 0px;
   box-shadow: 0px 10px 15px 13px rgba(164, 93, 182, 0.211);
+  animation: qr 1s;
+}
+
+h6{
+  border-radius: 20px 0px;
+  box-shadow: 0px 10px 15px 13px rgba(8, 7, 9, 0.359);
   animation: qr 1s;
 }
 @keyframes qr {
