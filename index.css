@@ -120,8 +120,7 @@ margin-top: 100px;
 .Product > span >h1{
   position: relative;
   font-size: 40px;
-    animation: typing 4s steps(40, end) forwards;
-    white-space: nowrap;
+  
     overflow: hidden;
     border-right: 3px solid rgb(25, 237, 240);
     padding-right: 10px;
