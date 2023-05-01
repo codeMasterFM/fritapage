@@ -1,4 +1,4 @@
-const observer = new IntersectionObserver((entries)=>{
+/* const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         console.log(entry)
         if (entry.isIntersecting) {
@@ -22,4 +22,4 @@ window.scroll({
     behavior: 'smooth'
   });
 }
-info.addEventListener('click',scrollInfo);
+info.addEventListener('click',scrollInfo);*/
