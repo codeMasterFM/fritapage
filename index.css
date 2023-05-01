@@ -120,13 +120,31 @@ nav {
     animation: typing 4s steps(40, end) forwards;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 24px;
     border-right: 3px solid rgb(25, 237, 240);
     padding-right: 10px;
     color: antiquewhite;
     border-bottom: 1px solid white;
     z-index: 20;
+    animation: ll 4s ease-in-out infinite alternate;
+    padding: 5px;
+    border-radius: 20px 0px 20px 0px;
   }
+
+  @keyframes ll {
+    50%{
+background-color: #2e2d3288;
+      }
+      75%{
+background:linear-gradient(190deg ,#fff #2e2d32);
+
+      }
+      
+      100%{
+        background-color: #5e589884;
+      }
+    }
+    
+  
   
   /* Define la animación de la máquina de escribir */
   @keyframes typing {
