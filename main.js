@@ -23,3 +23,7 @@ window.scroll({
   });
 }
 info.addEventListener('click',scrollInfo);*/
+
+const btn = document.querySelector('#btnForm')
+console.log(btn)
+btn.addEventListener('click',()=> window.location.href = 'https://forms.gle/PzuhKzzBKQuf66458')

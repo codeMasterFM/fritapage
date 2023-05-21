@@ -11,6 +11,7 @@ body {
 nav {
   background:linear-gradient(190deg, black,#5e5898);
   /*animation-name: color;*/
+
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -77,18 +78,19 @@ animation: opa 13 ease-in-out;
 }
 .hidden > button{
   background-color: rgb(10, 199, 136);
-  height: 20vh;
+  height: 10vh;
   width: 100vh;
   border-radius: 30px;
-  top: 80vh;
+  top: 89vh;
   border: 0px;
   color: white;
-  font-size: 60px;
-  text-shadow:  1px 1px 1px black;
+  font-size: 40px;
+ 
   position:fixed;
   z-index: 100;
   transition: all 1s ease;
-}
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 .hidden > button:hover{
   background-color: #9a4be4;
   box-shadow: 3px 3px 20px 0px black;
@@ -171,7 +173,7 @@ background:linear-gradient(190deg ,#fff #2e2d32);
   }
 
 
-iframe {
+/*iframe {
     border: 2px solid black;
   background-color: aliceblue;
   border-radius: 20px;
@@ -179,6 +181,8 @@ iframe {
   width: 393px;
   transform: scale(0.7);
 }
+*/
+
 
 .card {
     width: 190px;
